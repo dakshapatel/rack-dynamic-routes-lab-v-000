@@ -7,7 +7,7 @@ class Application
 
 
 
-    if req.path.include?"/items"
+    if req.path.match(/items/)
       resp.write "#{items}.price"
       resp.write = 200
 
