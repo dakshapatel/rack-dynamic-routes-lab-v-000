@@ -13,8 +13,8 @@ class Application
     if req.path.match(/items/)
       binding.pry
       item_name = req.path.split('/')[2]
-      @@items.find do |item|
-        item_name(item)
+      @@items.find do |item.name|
+        
       if item_name = Item.name
       resp.write "#{Item.price}"
 
