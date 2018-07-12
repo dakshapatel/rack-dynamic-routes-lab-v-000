@@ -18,10 +18,7 @@ class Application
       end
       if item_found
         resp.write "item_found.price"
-      if item_name = Item.name
-      resp.write "#{Item.price}"
-
-      resp.write = 200
+        resp.write = 200
 
     else
       resp.write "Route not found"
