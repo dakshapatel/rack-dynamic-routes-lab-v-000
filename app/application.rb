@@ -16,6 +16,8 @@ class Application
       item_found = @@items.find do |item|
         item.name == item_name
       end 
+      if item_found.price
+        resp.write 
       if item_name = Item.name
       resp.write "#{Item.price}"
 
