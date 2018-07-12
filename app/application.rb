@@ -4,8 +4,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    if req.path 
-
+    
 
     if req.path=="/items/name"
       resp.write Item.price
@@ -15,7 +14,7 @@ class Application
       resp.status = 404
     end
 
-    
+
     resp.finish
   end
 end
