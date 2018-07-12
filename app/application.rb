@@ -14,7 +14,7 @@ class Application
       binding.pry
       item_name = req.path.split('/')[2]
       @@items.find do |item|
-
+        item.name
       if item_name = Item.name
       resp.write "#{Item.price}"
 
