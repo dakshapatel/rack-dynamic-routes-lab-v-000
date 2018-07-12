@@ -11,6 +11,7 @@ class Application
     if req.path.match(/items/)
       binding.pry
       item_name = req.path.split('/')[2]
+      if item_name = Item.name
       resp.write "#{Item.price}"
 
       resp.write = 200
