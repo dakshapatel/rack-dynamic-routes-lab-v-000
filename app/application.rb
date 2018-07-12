@@ -11,7 +11,7 @@ class Application
 
 
     if req.path.match(/items/)
-      binding.pry
+      
       item_name = req.path.split('/')[2]
       item_found = @@items.find do |item|
         item.name == item_name
@@ -23,7 +23,7 @@ class Application
       elsif item_found = nil
         resp.write "Item not found"
         resp.status = 400
-      end 
+      end
 
     else
       resp.write "Route not found"
