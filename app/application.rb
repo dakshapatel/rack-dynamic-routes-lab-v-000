@@ -13,7 +13,7 @@ class Application
     if req.path.match(/items/)
       binding.pry
       item_name = req.path.split('/')[2]
-      @@items.find do |item|
+      item_found = @@items.find do |item|
         item.name == item_name
       end 
       if item_name = Item.name
