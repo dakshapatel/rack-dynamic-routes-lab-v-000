@@ -8,7 +8,7 @@ class Application
 
 
     if req.path.include?"/items"
-      resp.write @@Item.price
+      resp.write "#{items}.price"
       resp.write = 200
 
     else
