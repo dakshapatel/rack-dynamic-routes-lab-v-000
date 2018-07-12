@@ -17,7 +17,7 @@ class Application
         item.name == item_name
       end
       if item_found
-        resp.write item_found.price
+        resp.write "item_found.price"
       if item_name = Item.name
       resp.write "#{Item.price}"
 
