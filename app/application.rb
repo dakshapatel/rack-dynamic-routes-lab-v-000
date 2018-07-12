@@ -23,6 +23,7 @@ class Application
       elsif item_found = nil
         resp.write "Item not found"
         resp.status = 400
+      end 
 
     else
       resp.write "Route not found"
