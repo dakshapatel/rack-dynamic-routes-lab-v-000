@@ -8,7 +8,8 @@ class Application
 
 
     if req.path.include?"/items"
-      resp.write Item.price
+      resp.write @@Item.price
+      resp.write = 200
 
     else
       resp.write "Route not found"
