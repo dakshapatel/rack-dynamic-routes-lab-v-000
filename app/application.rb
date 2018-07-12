@@ -9,6 +9,7 @@ class Application
 
     if req.path.match(/items/)
       resp.write "#{items}.price"
+      binding.pry
       resp.write = 200
 
     else
