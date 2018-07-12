@@ -15,9 +15,9 @@ class Application
       item_name = req.path.split('/')[2]
       item_found = @@items.find do |item|
         item.name == item_name
-      end 
-      if item_found.price
-        resp.write 
+      end
+      if item_found
+        resp.write item_found.price
       if item_name = Item.name
       resp.write "#{Item.price}"
 
