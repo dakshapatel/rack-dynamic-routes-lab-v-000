@@ -6,7 +6,7 @@ class Application
 
 
 
-    if req.path.include?"/items/name"
+    if req.path.include?"/items"
       resp.write Item.price
 
     else
