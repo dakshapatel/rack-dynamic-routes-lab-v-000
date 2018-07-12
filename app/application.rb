@@ -20,7 +20,7 @@ class Application
         resp.write "#{item_found.price}"
         resp.status = 200
 
-      elsif item_found = nil
+      elsif 
         resp.write "Item not found"
         resp.status = 400
       end
