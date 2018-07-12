@@ -17,7 +17,7 @@ class Application
         item.name == item_name
       end
       if item_found
-        resp.write "#{item_found.price"}"
+        resp.write "#{item_found.price}"
         resp.status = 200
 
       elsif item_found = nil
